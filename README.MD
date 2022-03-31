@@ -11,6 +11,13 @@
 #### Notes
 - Branch name for each task should be `<username>/feature/<task-id>_<task-description>`.
 - Each task that was done should be submitted as a pull request into `<username>/master` branch
+- Commit messages should look like this:
+```
+TASK-2:
+ - added class Application
+ - refactores ...
+ - added tests for Aplication class.
+ ```
 
 **Example**
 ```
