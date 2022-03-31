@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  webchat:
+    container_name: websocket-chat
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    working_dir: "/app"
+    command: "./server.php"
+    volumes:
+      - ./:/app
+    expose:
+      - 8080
+    networks:
+      - chat-network
+
+networks:
+  chat-network:
+    external: false
